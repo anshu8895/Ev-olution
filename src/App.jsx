@@ -10,7 +10,7 @@ const App = () => {
     { text1: "Give in to", text2: "your desires" },
   ]
   const [heroCount, setHeroCount] = useState(0)
-  const [playStatus, setPlayStatus] = useState(true)
+  const [playStatus, setPlayStatus] = useState(false)
 
   useEffect(() => {
     const intervalId = setInterval(() => {
