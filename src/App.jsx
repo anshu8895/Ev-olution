@@ -10,7 +10,7 @@ const App = () => {
     { text1: "Give in to", text2: "your desires" },
   ]
   const [heroCount, setHeroCount] = useState(0)
-  const [playStatus, setPlayStatus] = useState(true) //changes the video state to true
+  const [playStatus, setPlayStatus] = useState(false) //changes the video state to true
 
   useEffect(() => {
     const intervalId = setInterval(() => {
