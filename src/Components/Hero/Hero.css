@@ -22,14 +22,6 @@
   cursor: pointer;
 }
 
-
-
-
-
-
-
-/* ------------------------------------------------------------ */
-
 .hero-dot-play {
   display: flex;
   justify-content: space-between;
@@ -70,4 +62,103 @@
 .hero-play img {
   width: 60px; 
   height: 60px; 
+}
+
+
+
+/* ------------media query------------ */
+@media (max-width: 785px) {
+  .hero {
+    margin: 0px 60px;
+    margin-top: 135px;
+  }
+
+  .hero-text {
+    font-size: 35px;
+    line-height: 10px;
+  }
+
+  .hero-explore {
+    margin-top: 35px;
+    padding-left: 15px;
+    border-radius: 35px;
+    gap: 8px;
+  }
+
+  .hero-explore p{
+    font-size: 15px;
+  }
+
+  .hero-explore img{
+    width: 50px; 
+    height: 50px;
+  }
+
+  .hero-dots {
+    gap: 11.5px;
+    height: 50px;
+  }
+
+  .hero-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 3.75px;
+  }
+
+  .hero-play p {
+    font-size: 8.5px;
+  }
+
+  .hero-play img {
+    width: 30px; 
+    height: 30px; 
+  }
+}
+
+@media (max-width: 524px) {
+  .hero {
+    margin: 0px 30px;
+    margin-top: 67.5px;
+  }
+
+  .hero-text {
+    font-size: 17.5px;
+    line-height: 5px;
+  }
+
+  .hero-explore {
+    margin-top: 17.5px;
+    padding-left: 7.5px;
+    border-radius: 18px;
+    gap: 4px;
+  }
+
+  .hero-explore p{
+    font-size: 8px;
+  }
+
+  .hero-explore img{
+    width: 34px; 
+    height: 34px;
+  }
+
+  .hero-dots {
+    gap: 5.75px;
+    height: 25px;
+  }
+
+  .hero-dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 1.875px;
+  }
+
+  .hero-play p {
+    font-size: 4.25px;
+  }
+
+  .hero-play img {
+    width: 15px; 
+    height: 15px; 
+  }
 }

@@ -26,3 +26,68 @@
     background: white;
     color: #262626;
 }
+
+
+
+
+/* ------------media query------------ */
+@media (max-width: 1024px) {
+    .nav {
+      margin: 15px 90px;
+    }
+  
+    .nav-logo {
+      font-size: 31.5px;
+    }
+  
+    .nav-menu {
+      font-size: 13.5px;
+      gap: 52.5px;
+    }
+  
+    .nav-contact {
+      border-radius: 37.5px;
+      padding: 7.5px 28.5px;
+    }
+  }
+
+
+@media (max-width: 785px) {
+    .nav {
+      margin: 10px 60px;
+    }
+  
+    .nav-logo {
+      font-size: 21px;
+    }
+  
+    .nav-menu {
+      font-size: 9px;
+      gap: 35px;
+    }
+  
+    .nav-contact {
+      border-radius: 25px;
+      padding: 5px 19px;
+    }
+  }
+  
+@media (max-width: 524px) {
+    .nav {
+      margin: 5px 30px;
+    }
+  
+    .nav-logo {
+      font-size: 10.5px;
+    }
+  
+    .nav-menu {
+      font-size: 4.5px;
+      gap: 17.5px;
+    }
+  
+    .nav-contact {
+      border-radius: 12.5px;
+      padding: 2.5px 9.5px;
+    }
+  }
