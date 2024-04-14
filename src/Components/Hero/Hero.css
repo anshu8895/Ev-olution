@@ -1,13 +1,13 @@
 .hero {
   margin: 0px 120px;
-  margin-top: 270px;
+  margin-top: 164px;
 }
 
-.hero-text {
+.hero-text{
   color: white;
   font-size: 70px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 1.2;
 }
 
 .hero-explore {
@@ -71,18 +71,20 @@
   .hero {
     margin: 0px 60px;
     margin-top: 135px;
+    position: fixed;
+    bottom: 0;
   }
 
   .hero-text {
     font-size: 35px;
-    line-height: 10px;
+    line-height: 1.2;
   }
 
   .hero-explore {
     margin-top: 35px;
     padding-left: 15px;
     border-radius: 35px;
-    gap: 8px;
+    gap: 8px;    
   }
 
   .hero-explore p{
@@ -105,60 +107,17 @@
     border-radius: 3.75px;
   }
 
+  .hero-play {
+    position: fixed;
+    right: 40px;
+    gap: 10px;
+  }
   .hero-play p {
-    font-size: 8.5px;
+    font-size: 10px;
   }
 
   .hero-play img {
     width: 30px; 
     height: 30px; 
-  }
-}
-
-@media (max-width: 524px) {
-  .hero {
-    margin: 0px 30px;
-    margin-top: 67.5px;
-  }
-
-  .hero-text {
-    font-size: 17.5px;
-    line-height: 5px;
-  }
-
-  .hero-explore {
-    margin-top: 17.5px;
-    padding-left: 7.5px;
-    border-radius: 18px;
-    gap: 4px;
-  }
-
-  .hero-explore p{
-    font-size: 8px;
-  }
-
-  .hero-explore img{
-    width: 34px; 
-    height: 34px;
-  }
-
-  .hero-dots {
-    gap: 5.75px;
-    height: 25px;
-  }
-
-  .hero-dot {
-    width: 3px;
-    height: 3px;
-    border-radius: 1.875px;
-  }
-
-  .hero-play p {
-    font-size: 4.25px;
-  }
-
-  .hero-play img {
-    width: 15px; 
-    height: 15px; 
   }
 }
