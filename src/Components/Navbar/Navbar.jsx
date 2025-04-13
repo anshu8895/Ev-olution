@@ -1,19 +1,27 @@
-import './Navbar.css'
+import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ activeSection }) => {
   return (
-    <div className='nav'>
-      <a href="https://anshu8895.github.io/Ev-olution/">
-      <div className="nav-logo">EV-olution</div>
+    <nav className='nav'>
+      <a href="#home" aria-label="EV-olution home">
+        <div className="nav-logo">EV-olution</div>
       </a>
-      <ul className="nav-menu">
-        <li>Home</li>
-        <li>Exlpore</li>
-        <li>About</li>
-        <li className='nav-contact'>Contact</li>
+      <ul className="nav-menu" role="navigation">
+        <li className={activeSection === "home" ? "active" : ""}>
+          <a href="#home">Home</a>
+        </li>
+        <li className={activeSection === "explore" ? "active" : ""}>
+          <a href="#explore">Explore</a>
+        </li>
+        <li className={activeSection === "about" ? "active" : ""}>
+          <a href="#about">About</a>
+        </li>
+        <li className={`nav-contact ${activeSection === "contact" ? "active" : ""}`}>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
-    </div>
-  )
-}
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;

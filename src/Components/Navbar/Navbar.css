@@ -1,78 +1,110 @@
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 120px;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 120px;
+  color: var(--text-color);
 }
 
-.nav a{
+.nav a {
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
 }
 
 .nav-logo {
-    font-family: Outfit;
-    font-size: 42px;
-    font-weight: 600;
+  font-family: Outfit;
+  font-size: var(--font-size-large);
+  font-weight: 600;
 }
 
 .nav-menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    font-size: 18px;
-    gap: 70px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: var(--font-size-medium);
+  gap: var(--spacing-xl);
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: var(--accent-color);
+}
+
+.nav-menu li.active a {
+  color: var(--accent-color);
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-menu li.active a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background: var(--accent-color);
 }
 
 .nav-contact {
-    border-radius: 50px;
-    padding: 10px 38px;
-    background: white;
-    color: #262626;
+  border-radius: var(--border-radius-large);
+  padding: 10px 38px;
+  background: var(--primary-color);
+  color: var(--dark-bg);
 }
 
+.nav-contact a {
+  color: var(--dark-bg) !important;
+}
 
-
+.nav-contact.active {
+  background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
+  box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
+}
 
 /* ------------media query------------ */
 @media (max-width: 1024px) {
-    .nav {
-      margin: 15px 90px;
-    }
-  
-    .nav-logo {
-      font-size: 31.5px;
-    }
-  
-    .nav-menu {
-      font-size: 13.5px;
-      gap: 52.5px;
-    }
-  
-    .nav-contact {
-      border-radius: 37.5px;
-      padding: 7.5px 28.5px;
-    }
+  .nav {
+    margin: 15px 90px;
   }
+
+  .nav-logo {
+    font-size: 31.5px;
+  }
+
+  .nav-menu {
+    font-size: 13.5px;
+    gap: 52.5px;
+  }
+
+  .nav-contact {
+    border-radius: 37.5px;
+    padding: 7.5px 28.5px;
+  }
+}
 
 
 @media (max-width: 785px) {
-    .nav {
-      margin: 10px 5px;
-    }
-  
-    .nav-logo {
-      font-size: 21px;
-    }
-  
-    .nav-menu {
-      font-size: 11px;
-      gap: 10px;
-    }
-  
-    .nav-contact {
-      border-radius: 25px;
-      padding: 5px 19px;
-    }
+  .nav {
+    margin: 10px 5px;
   }
+
+  .nav-logo {
+    font-size: 21px;
+  }
+
+  .nav-menu {
+    font-size: 11px;
+    gap: 10px;
+  }
+
+  .nav-contact {
+    border-radius: 25px;
+    padding: 5px 19px;
+  }
+}
